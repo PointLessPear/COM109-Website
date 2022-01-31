@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quinn's Bar Newcastle</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="JS/validation.js"> </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">      
+
+</head>
+
+<body>
+    <div id ="navbar" style="top: 0;">   <!--navbar at the top of this page instead of the bg image on the main page  */ -->
+        <a href="ContactUs.html" class="Active">Contact</a>
+        <a href="AboutUs.html" >About</a>
+        <a href="Index.html">Home</a>
+        <img src="images/beer-mug.png" alt="icon">
+    </div> 
+
+    <div class="row">
+        <div class="column left">
+
+        </div>
+        <div class="column middle">
+            <h1 class="content-header" id="contactUs">Contact Us</h1> 
+            <div class="form-container">
+                <form action="" method="post" onsubmit="return validation()">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="Comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <button class="formBtn" onClick="JavaScript:validation()">Submit Form</button></form>
+            </div>
+        </div>
+        <div class="column right">
+            <div class="sidebar"> 
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-column">
+                <footer>
+                    <ul class="list-inline">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About</a></li>
+                        <li><a href="ContactUs.html">Contact</a></li>
+                    </ul>
+                    <p class="copyright">Quinn's Bar Newcastle © 2021</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
